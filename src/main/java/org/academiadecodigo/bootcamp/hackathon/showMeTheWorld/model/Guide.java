@@ -1,14 +1,13 @@
 package org.academiadecodigo.bootcamp.hackathon.showMeTheWorld.model;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.ManyToMany;
+import javax.persistence.*;
 import java.util.List;
 
 /**
  * Created by codecadet on 17/04/2019.
  */
+@Entity
+@Table(name = "guides")
 public class Guide {
 
 
@@ -29,7 +28,7 @@ public class Guide {
     @ManyToMany
     private List<Language> languages;
 
-    private List<Tags> tags;
+    private List<Tag> tags;
 
 
 

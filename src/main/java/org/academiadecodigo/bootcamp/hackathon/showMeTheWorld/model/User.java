@@ -1,8 +1,6 @@
 package org.academiadecodigo.bootcamp.hackathon.showMeTheWorld.model;
 
 import javax.persistence.*;
-import javax.validation.constraints.Max;
-import java.util.List;
 
 /**
  * Created by codecadet on 17/04/2019.

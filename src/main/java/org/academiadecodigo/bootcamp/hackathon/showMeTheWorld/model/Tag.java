@@ -3,20 +3,18 @@ package org.academiadecodigo.bootcamp.hackathon.showMeTheWorld.model;
 import javax.persistence.*;
 import java.util.List;
 
-/**
- * Created by codecadet on 17/04/2019.
- */
 @Entity
-@Table(name = "languages")
-public class Language {
+@Table(name = "tags")
+public class Tag {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
-    private String language;
+    private String tagName;
 
     @ManyToMany
     private List<Guide> users;
+
 
 }
