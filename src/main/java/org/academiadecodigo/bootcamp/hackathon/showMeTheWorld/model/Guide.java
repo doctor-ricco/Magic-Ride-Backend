@@ -6,11 +6,7 @@ import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 import java.util.List;
 
-/**
- * Created by codecadet on 17/04/2019.
- */
 public class Guide {
-
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -30,7 +26,5 @@ public class Guide {
     private List<Language> languages;
 
     private List<Tags> tags;
-
-
 
 }

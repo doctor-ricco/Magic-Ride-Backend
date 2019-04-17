@@ -4,9 +4,6 @@ import javax.persistence.*;
 import javax.validation.constraints.Max;
 import java.util.List;
 
-/**
- * Created by codecadet on 17/04/2019.
- */
 @Entity
 @Table(name = "users")
 public class User {
@@ -25,5 +22,43 @@ public class User {
 
     private byte[] photo;
 
+    public String getName() {
+        return name;
+    }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public Integer getRating() {
+        return rating;
+    }
+
+    public void setRating(Integer rating) {
+        this.rating = rating;
+    }
+
+    public byte[] getPhoto() {
+        return photo;
+    }
+
+    public void setPhoto(byte[] photo) {
+        this.photo = photo;
+    }
 }
